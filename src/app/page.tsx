@@ -1,101 +1,257 @@
+'use client'
+
+import { WordRotate } from "@/components/magicui/word-rotate";
+import { Carousel, CarouselContent,  CarouselItem,  CarouselNext,  CarouselPrevious, } from "@/components/ui/carousel";
 import Image from "next/image";
+import Link from "next/link";
+import { MdAccessAlarms, MdArrowOutward, MdLeakAdd } from "react-icons/md";
+import Autoplay from "embla-carousel-autoplay"
+import React from "react";
+import { BlurFade } from "@/components/magicui/blur-fade";
+import Loader from "@/components/Header/loader";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: false})
+  )
+
+  
+  return (
+    
+      <main className="relative flex flex-col items-center justify-center">
+      <div className="absolute -z-50 inset-0 size-[300px] bottom-0 w-full 
+      bg-[linear-gradient(to_right,#73737320_1px,transparent_1px),linear-gradient(to_bottom,#73737320_1px,transparent_1px)] 
+      bg-[size:50px_50px] 
+      [mask-image:radial-gradient(ellipse_100%_80%_at_50%_50%,#000_40%,transparent_100%)]">
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      <section id="hero" className="flex justify-left w-full">
+        <div className="relative flex max-w-7xl flex-col px-4 pb-20 lg:py-20 m-auto">
+          <div className="grid grid-cols-1 pt-10 lg:grid-cols-2 lg:pt-0 items-center">
+          <BlurFade delay={0.25} inView>
+            <div className="relative mx-auto flex max-w-2xl flex-col items-left self-center gap-4 p-2 text-left">
+              <div className="heading">
+              <h1 className="text-6xl font-bold text-black leading-normal">We provide Digital Solutions that</h1>
+              <WordRotate
+      className="text-4xl font-bold text-black"
+      words={["Boost Profitability", "Elevate Brand Awareness", "Generate Leads", "Accelerate Business Growth"]}
+    /></div>
+    <p className="text-lg">Our focus is on delivering accessible, user-friendly experiences that drive growth, engagement, and long-term success.</p>
+    <Link href="/" className="flex ml-1 mt-10 font-semibold relative gap-2 text-xl pb-1 items-center btn-underline max-w-max btn-arrow">About Us <span className="li-icon"><MdArrowOutward size={20}/></span></Link>
+            </div>
+            </BlurFade>
+            <BlurFade delay={0.25 * 2} inView>
+            <div className="relative flex flex-col items-center justify-center p-2 pt-20 lg:pt-0">
+            <Image 
+        src="/25-media.png" 
+        alt="Description of image"
+        layout="responsive" 
+        width={1200} 
+        height={800} 
+      />
+            </div>
+            </BlurFade>
+          </div>
+        </div>
+      </section>  
+      <section id="fetures" className="flex w-full bg-custom-background">
+        <div className="relative flex max-w-7xl flex-col px-4 m-auto">
+          <div className="grid grid-cols-1 pt-10 lg:grid-cols-2 lg:pt-0">
+            <div className="relative mx-auto flex max-w-2xl flex-col items-left self-center gap-4 p-2 text-left">
+            <BlurFade delay={0.25} inView direction="up">
+               <h2 className="text-4xl font-bold text-black dark:text-white leading-normal lg:max-w-md">We shape the Perfect Solutions</h2>
+            </BlurFade>
+            </div>
+            <div className="relative flex flex-col items-center justify-center p-2 pt-20 lg:p-28 gap-10 bg-dark-background text-dark-text-color">
+              <BlurFade delay={0.25} inView direction="up">
+               <p className="text-lg">We are committed to providing our customers with exceptional service with a focus on innovation, creativity, and efficiency, we strive to deliver impactful results that drive success.</p>
+               </BlurFade>
+               <BlurFade delay={0.25 * 2} inView direction="up">
+               <p className="text-lg">we provide the perfect solutions to help your brand stand out and thrive in today's fast-paced media landscape.</p>
+               </BlurFade>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 pt-10 lg:grid-cols-2 lg:pt-0">
+            <div className="relative mx-auto flex max-w-2xl flex-col items-left self-center gap-4 lg:-mt-10 lg:-mr-10 text-left">
+            <BlurFade delay={0.50} inView direction="left">
+            <Image 
+        src="/25-media-perfect-solution.png" 
+        alt="Description of image" 
+        width={800} 
+        height={500} 
+      />
+      </BlurFade>
+            </div>
+            <div className="relative flex flex-col items-center justify-center lg:pt-0">
+               <div className="grid grid-cols-1 pt-10 lg:grid-cols-2 lg:pl-28 gap-10">
+               <BlurFade delay={0.25} inView direction="right">
+                <div className="">
+                <MdAccessAlarms size={50} />
+                <p className="mt-7 text-xl font-semibold">Quicker than building an in-house creative team</p>
+                </div>
+                </BlurFade>
+                <BlurFade delay={0.25} inView direction="left">
+                <div className="">
+                <MdLeakAdd size={50} />
+                <p className="mt-7 text-xl font-semibold">All your design needs, under one roof</p>
+                </div>
+                </BlurFade>
+               </div>
+            </div>
+          </div>
+        </div>
+        </section>  
+        <section id="services" className="flex w-full">
+        <div className="relative flex max-w-7xl flex-col px-4 pb-20 lg:py-20 m-auto">
+          <div className="grid grid-cols-1 pt-10 lg:grid-cols-3 lg:col-span-1 lg:pt-0">
+          <div className="relative mx-auto flex max-w-2xl flex-col items-left gap-4 p-2 text-left md:ml-12 lg:col-span-1">
+          <h2 className="text-4xl font-bold text-black leading-normal lg:max-w-md">
+          Services We Provide With Exceptional Care.
+          </h2>
+          <BlurFade delay={0.25} inView>
+          <Image 
+        src="/services.png" 
+        alt="Description of image" 
+        width={500} 
+        height={700} 
+      />
+      </ BlurFade>
+            </div>
+            <div className="lg:col-span-2 lg:ml-24">
+            <p className="lg:max-w-md pb-10 text-lg">We offer a comprehensive range of creative services to help your business stand out in the digital world.</p>
+            <ul>
+            <BlurFade delay={0.25} inView direction="left">
+            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>01</span> <span className="w-9/12 text-4xl">Branding and Strategy</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            </BlurFade>
+            <BlurFade delay={0.50} inView direction="left">
+            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>02</span> <span className="w-9/12 text-4xl">Graphic Design</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            </BlurFade>
+            <BlurFade delay={0.75} inView direction="left">
+            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>03</span> <span className="w-9/12 text-4xl">UI/UX Design</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            </BlurFade>
+            <BlurFade delay={1} inView direction="left">
+            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>04</span> <span className="w-9/12 text-4xl">Web Development</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            </BlurFade>
+            <BlurFade delay={1.25} inView direction="left">
+            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>05</span> <span className="w-9/12 text-4xl">Digital Marketing</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            </BlurFade>
+            </ul>
+            </div>
+            </div>
+            </div>
+          </section>  
+          <section id="client" className="flex w-full bg-custom-background">
+          <div className="relative flex max-w-7xl flex-col px-4 pb-20 lg:py-20 m-auto">
+          <BlurFade delay={0.25} inView direction="up">
+          <h2 className="text-4xl font-bold text-black leading-normal lg:max-w-5xl mb-6 text-left">We've been fortunate to work with and for people from some amazing organizations.</h2>
+          </BlurFade>
+          <BlurFade delay={0.50} inView direction="up">
+          <div className="grid grid-cols-5">
+          <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+      <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+      <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+      <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+      <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50}/></div>
+      <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+        <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+        <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+        <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+        <div className="p-14 border"><Image 
+        src="/25-media-logo.png" 
+        alt="Description of image" 
+        width={150} 
+        height={50} /></div>
+          </div>
+          </BlurFade>
+          </div>
+          </section>
+          <section id="testimnonial" className="flex justify-center w-full">
+            <div className="relative flex max-w-7xl flex-col px-4 pb-20 lg:py-20 m-auto text-center">
+            <BlurFade delay={0.25} inView direction="up">
+              <h2 className="text-4xl font-bold text-black leading-normal">Clients Feedback</h2>
+            </BlurFade>
+            <BlurFade delay={0.50} inView direction="up">
+          <Carousel 
+          className="w-full max-w-3xl"
+          plugins={[plugin.current]}
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+          >
+          <CarouselContent className="-ml-1">
+          <CarouselItem>
+            <div className="p-1">
+              <div>
+                <div className="grid items-center justify-center p-6">
+                  <span className="text-3xl">Working with 25 Media for our brands has been a remarkable experience. The team is professional, and creative and brings quality to our brands through their innovative ideas.</span>
+                  <span className="mt-7 text-2xl font-semibold">Prashant K, SEO Manager - Valical</span>
+                </div>
+              </div>
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="p-1">
+              <div>
+                <div className="grid items-center justify-center p-6">
+                  <span className="text-3xl">Very understanding and many times go out of their way to assist their customers.</span>
+                  <span className="mt-7 text-2xl font-semibold">Alson David, UF</span>
+                </div>
+              </div>
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="p-1">
+              <div>
+                <div className="grid items-center justify-center p-6">
+                  <span className="text-3xl">Our experience with 25 Media and Team has been really good. We contacted them for Social Media and Websites services and we got results in first 6 months itself.</span>
+                  <span className="mt-7 text-2xl font-semibold">Prashant Kakde, HB</span>
+                </div>
+              </div>
+            </div>
+          </CarouselItem>
+      </CarouselContent>
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+    </BlurFade>
     </div>
+          </section>
+          <Loader />
+    </main>
   );
 }
