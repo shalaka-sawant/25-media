@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 py-8 lg:grid-cols-3">
                   <div className="lg:col-span-2 text-left relative">
                   <h2 className="text-7xl font-medium">Let's work together</h2>
-                  <Link href="/" className="flex ml-1 mt-10 font-semibold relative gap-2 text-xl pb-1 items-center btn-underline max-w-max btn-arrow">Contact Us <span className="li-icon"><MdArrowOutward size={20}/></span></Link>
+                  <Link href="/contact" className="flex ml-1 mt-10 font-semibold relative gap-2 text-xl pb-1 items-center btn-underline max-w-max btn-arrow">Contact Us <span className="li-icon"><MdArrowOutward size={20}/></span></Link>
                   </div>
                   <div className="lg:col-span-1 text-left content-center">
                     <div className="grid gap-10">

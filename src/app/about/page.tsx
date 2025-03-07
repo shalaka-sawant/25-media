@@ -47,9 +47,9 @@ const About = () => {
         <Image 
         src="/asawari.png" 
         alt="Description of image"
-        className="size-16 rounded-full"
-        width={50} 
-        height={50} 
+        className="size-16 rounded-full bg-custom-background"
+        width={70} 
+        height={70} 
       />
           <div>
             <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">Asawari Mestry</h3>
@@ -62,9 +62,9 @@ const About = () => {
         <Image 
         src="/Ashwini.png" 
         alt="Description of image"
-        className="size-16 rounded-full"
-        width={50} 
-        height={50} 
+        className="size-16 rounded-full bg-custom-background"
+        width={70} 
+        height={70} 
       />
           <div>
             <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">Ashwini M</h3>
@@ -77,9 +77,9 @@ const About = () => {
         <Image 
         src="/prashant.png" 
         alt="Description of image"
-        className="size-16 rounded-full"
-        width={50} 
-        height={50} 
+        className="size-16 rounded-full bg-custom-background"
+        width={70} 
+        height={70} 
       />
           <div>
             <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">Prashant G.</h3>
@@ -92,9 +92,9 @@ const About = () => {
         <Image 
         src="/shalaka.png" 
         alt="Description of image"
-        className="size-16 rounded-full"
-        width={50} 
-        height={50} 
+        className="size-16 rounded-full bg-custom-background"
+        width={70} 
+        height={70} 
       />
           <div>
             <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">Shalaka Sawant</h3>

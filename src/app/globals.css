@@ -88,7 +88,6 @@
   .btn-underline:hover::after {
   width: 0%;
   }
-  .li-service:hover span.li-icon,
   .btn-arrow:hover span.li-icon{
     transform: rotate(45deg);
   }

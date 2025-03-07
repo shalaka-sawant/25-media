@@ -37,7 +37,7 @@ export default function Home() {
       words={["Boost Profitability", "Elevate Brand Awareness", "Generate Leads", "Accelerate Business Growth"]}
     /></div>
     <p className="text-lg">Our focus is on delivering accessible, user-friendly experiences that drive growth, engagement, and long-term success.</p>
-    <Link href="/" className="flex ml-1 mt-10 font-semibold relative gap-2 text-xl pb-1 items-center btn-underline max-w-max btn-arrow">About Us <span className="li-icon"><MdArrowOutward size={20}/></span></Link>
+    <Link href="/about" className="flex ml-1 mt-4 font-semibold relative gap-2 text-m pb-1 items-center btn-underline max-w-max btn-arrow">About Us <span className="li-icon"><MdArrowOutward size={15}/></span></Link>
             </div>
             </BlurFade>
             <BlurFade delay={0.25 * 2} inView>
@@ -63,7 +63,7 @@ export default function Home() {
             </BlurFade>
             </div>
             <div className="relative flex flex-col items-center justify-center p-2 pt-20 lg:p-28 gap-10 bg-dark-background text-dark-text-color">
-              <BlurFade delay={0.25} inView direction="up">
+               <BlurFade delay={0.25} inView direction="up">
                <p className="text-lg">We are committed to providing our customers with exceptional service with a focus on innovation, creativity, and efficiency, we strive to deliver impactful results that drive success.</p>
                </BlurFade>
                <BlurFade delay={0.25 * 2} inView direction="up">
@@ -118,22 +118,23 @@ export default function Home() {
       </ BlurFade>
             </div>
             <div className="lg:col-span-2 lg:ml-24">
-            <p className="lg:max-w-md pb-10 text-lg">We offer a comprehensive range of creative services to help your business stand out in the digital world.</p>
+            <p className="lg:max-w-md pb-4 text-lg">We offer a comprehensive range of creative services to help your business stand out in the digital world.</p>
+            <Link href="/services" className="flex font-semibold relative gap-2 text-m pb-1 items-center btn-underline max-w-max btn-arrow">Know More <span className="li-icon"><MdArrowOutward size={15}/></span></Link>
             <ul>
             <BlurFade delay={0.25} inView direction="left">
-            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>01</span> <span className="w-9/12 text-4xl">Branding and Strategy</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            <li className="py-10 mt-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">01</span> <span className="w-9/12 text-4xl">Branding and Strategy</span></li>
             </BlurFade>
             <BlurFade delay={0.50} inView direction="left">
-            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>02</span> <span className="w-9/12 text-4xl">Graphic Design</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">02</span> <span className="w-9/12 text-4xl">Graphic Design</span></li>
             </BlurFade>
             <BlurFade delay={0.75} inView direction="left">
-            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>03</span> <span className="w-9/12 text-4xl">UI/UX Design</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">03</span> <span className="w-9/12 text-4xl">UI/UX Design</span></li>
             </BlurFade>
             <BlurFade delay={1} inView direction="left">
-            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>04</span> <span className="w-9/12 text-4xl">Web Development</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">04</span> <span className="w-9/12 text-4xl">Web Development</span></li>
             </BlurFade>
             <BlurFade delay={1.25} inView direction="left">
-            <li className="py-10 flex justify-between items-center border-b border-gray-300 li-service"> <span>05</span> <span className="w-9/12 text-4xl">Digital Marketing</span> <span className="text-4xl li-icon transition-all delay-500"><MdArrowOutward /></span></li>
+            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">05</span> <span className="w-9/12 text-4xl">Digital Marketing</span></li>
             </BlurFade>
             </ul>
             </div>
