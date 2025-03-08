@@ -24,12 +24,12 @@ const About = () => {
                </div>
                <div className="relative flex w-full bg-custom-background">
                <div className="grid grid-cols-1 max-w-7xl px-4 m-auto py-20 lg:grid-cols-2">
-               <BlurFade delay={0.25} inView direction="right">
                     <div className="content-center p-2">
+                    <BlurFade delay={0.25} inView direction="right">
                     <h2 className="text-4xl font-bold text-black leading-normal lg:max-w-md">We deliver our best work with clients.</h2>
                     <p className="text-lg py-4">we collaborate closely, understand their unique goals, and align on a shared vision. By fostering open communication and a strong partnership, we are able to tailor our approach to meet their specific needs and challenges. This commitment to understanding and working together leads to results that exceed expectations and create lasting value.</p>
-                    </div>
                     </BlurFade>
+                    </div>
                     <BlurFade delay={0.25} inView direction="left">
                     <div className="p-2">
                     <Image 
