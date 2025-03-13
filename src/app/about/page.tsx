@@ -124,8 +124,34 @@ const About = () => {
     </ul>
   </div>
 </div>
-
-                </div>
+</div>
+<div className="bg-custom-background py-20">
+<div className="mx-auto max-w-7xl px-6 lg:px-8">
+  <div className="grid grid-cols-1 gap-x-24 gap-y-16 lg:grid-cols-3">
+  <BlurFade delay={0.25} inView direction="up">
+    <div className="grid">
+      <span className="text-5xl font-bold text-black leading-normal border-b">05+</span>
+      <span className="text-2xl font-bold text-black leading-normal pt-5">Years of Experience</span>
+      <p className="text-lg py-4">we have successfully developed and executed data-driven strategies that drive brand awareness, engagement.</p>
+    </div>   
+    </BlurFade>
+    <BlurFade delay={0.50} inView direction="up">
+    <div className="grid">
+      <span className="text-5xl font-bold text-black leading-normal border-b">50+</span>
+      <span className="text-2xl font-bold text-black leading-normal pt-5">Projects Delivered</span>
+      <p className="text-lg py-4">We ensuring that every project we handle exceeds client expectations, driving measurable success and growth.</p>
+    </div> 
+    </BlurFade>
+    <BlurFade delay={0.75} inView direction="up">
+    <div className="grid">
+     <span className="text-5xl font-bold text-black leading-normal border-b">98%</span>
+     <span className="text-2xl font-bold text-black leading-normal pt-5">Client Satisfaction</span>
+     <p className="text-lg py-4">Client satisfaction is not just a goal but a reflection of our passion for delivering impactful, high-quality outcomes.</p>
+    </div>
+    </BlurFade>
+  </div>
+</div>
+</div>
         </section>
     )
 }  

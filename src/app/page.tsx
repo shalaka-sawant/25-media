@@ -205,7 +205,7 @@ export default function Home() {
           <section id="testimnonial" className="flex justify-center w-full">
             <div className="relative flex max-w-7xl flex-col px-4 pb-20 lg:py-20 m-auto">
             <BlurFade delay={0.25} inView direction="up">
-              <h2 className="text-4xl font-bold text-black leading-normal lg:max-w-5xl mb-6 text-center">Clients Feedback</h2>
+              <h2 className="text-4xl font-bold text-black leading-normal mb-6 text-center">Clients Feedback</h2>
             </BlurFade>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
