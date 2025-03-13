@@ -62,7 +62,7 @@ export default function Home() {
                <h2 className="text-4xl font-bold text-black dark:text-white leading-normal lg:max-w-md">We shape the Perfect Solutions</h2>
             </BlurFade>
             </div>
-            <div className="relative flex flex-col items-center justify-center p-2 pt-20 lg:p-28 gap-10 bg-dark-background text-dark-text-color">
+            <div className="relative flex flex-col items-center justify-center p-2 pt-20 lg:p-28 gap-10 bg-dark-background text-white">
                <BlurFade delay={0.25} inView direction="up">
                <p className="text-lg">We are committed to providing our customers with exceptional service with a focus on innovation, creativity, and efficiency, we strive to deliver impactful results that drive success.</p>
                </BlurFade>
@@ -122,19 +122,19 @@ export default function Home() {
             <Link href="/services" className="flex font-semibold relative gap-2 text-m pb-1 items-center btn-underline max-w-max btn-arrow">Know More <span className="li-icon"><MdArrowOutward size={15}/></span></Link>
             <ul>
             <BlurFade delay={0.25} inView direction="left">
-            <li className="py-10 mt-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">01</span> <span className="w-9/12 text-4xl">Branding and Strategy</span></li>
+            <li className="py-10 mt-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8 text-indigo-600">01</span> <span className="w-9/12 text-4xl">Branding and Strategy</span></li>
             </BlurFade>
             <BlurFade delay={0.50} inView direction="left">
-            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">02</span> <span className="w-9/12 text-4xl">Graphic Design</span></li>
+            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8 text-indigo-600">02</span> <span className="w-9/12 text-4xl">Graphic Design</span></li>
             </BlurFade>
             <BlurFade delay={0.75} inView direction="left">
-            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">03</span> <span className="w-9/12 text-4xl">UI/UX Design</span></li>
+            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8 text-indigo-600">03</span> <span className="w-9/12 text-4xl">UI/UX Design</span></li>
             </BlurFade>
             <BlurFade delay={1} inView direction="left">
-            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">04</span> <span className="w-9/12 text-4xl">Web Development</span></li>
+            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8 text-indigo-600">04</span> <span className="w-9/12 text-4xl">Web Development</span></li>
             </BlurFade>
             <BlurFade delay={1.25} inView direction="left">
-            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8">05</span> <span className="w-9/12 text-4xl">Digital Marketing</span></li>
+            <li className="py-10 flex items-center border-b border-gray-300 li-service"> <span className="mr-8 text-indigo-600">05</span> <span className="w-9/12 text-4xl">Digital Marketing</span></li>
             </BlurFade>
             </ul>
             </div>
@@ -203,56 +203,28 @@ export default function Home() {
           </div>
           </section>
           <section id="testimnonial" className="flex justify-center w-full">
-            <div className="relative flex max-w-7xl flex-col px-4 pb-20 lg:py-20 m-auto text-center">
+            <div className="relative flex max-w-7xl flex-col px-4 pb-20 lg:py-20 m-auto">
             <BlurFade delay={0.25} inView direction="up">
-              <h2 className="text-4xl font-bold text-black leading-normal">Clients Feedback</h2>
+              <h2 className="text-4xl font-bold text-black leading-normal lg:max-w-5xl mb-6 text-center">Clients Feedback</h2>
             </BlurFade>
-            <BlurFade delay={0.50} inView direction="up">
-          <Carousel 
-          className="w-full max-w-3xl"
-          plugins={[plugin.current]}
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
-          >
-          <CarouselContent className="-ml-1">
-          <CarouselItem>
-            <div className="p-1">
-              <div>
-                <div className="grid items-center justify-center p-6">
-                  <span className="text-3xl">Working with 25 Media for our brands has been a remarkable experience. The team is professional, and creative and brings quality to our brands through their innovative ideas.</span>
-                  <span className="mt-7 text-2xl font-semibold">Prashant K, SEO Manager - Valical</span>
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+                <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
+                <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
+                  <span className="text-lg pt-5">Working with 25 Media for our brands has been a remarkable experience. The team is professional, and creative and brings quality to our brands through their innovative ideas.</span>
+                  <span className="mt-7 text-1xl border-t pt-5">Prashant K, <br/>SEO Manager - Valical</span>
                 </div>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="p-1">
-              <div>
-                <div className="grid items-center justify-center p-6">
-                  <span className="text-3xl">Very understanding and many times go out of their way to assist their customers.</span>
-                  <span className="mt-7 text-2xl font-semibold">Alson David, UF</span>
+                <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
+                  <span className="text-lg pt-5">Very understanding and many times go out of their way to assist their customers.</span>
+                  <span className="mt-7 text-1xl border-t pt-5">Alson David, <br/>UF</span>
                 </div>
-              </div>
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="p-1">
-              <div>
-                <div className="grid items-center justify-center p-6">
-                  <span className="text-3xl">Our experience with 25 Media and Team has been really good. We contacted them for Social Media and Websites services and we got results in first 6 months itself.</span>
-                  <span className="mt-7 text-2xl font-semibold">Prashant Kakde, HB</span>
+                <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
+                  <span className="text-lg pt-5">Our experience with 25 Media and Team has been really good. We contacted them for Social Media and Websites services and we got results in first 6 months itself.</span>
+                  <span className="mt-7 text-1xl border-t pt-5">Prashant Kakde, <br/>HB</span>
                 </div>
-              </div>
             </div>
-          </CarouselItem>
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
-    </BlurFade>
+            </div>
     </div>
           </section>
-          <Loader />
     </main>
   );
 }
