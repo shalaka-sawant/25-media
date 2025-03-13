@@ -40,7 +40,7 @@ const Contact = () => {
     return(
         <section id="contact" className="flex justify-left w-full">
             <div className="relative flex max-w-7xl flex-col px-4 pb-20 lg:py-20 m-auto">
-               <div className="grid gap-20 grid-cols-1 pt-10 lg:grid-cols-2 lg:pt-0 items-center">
+               <div className="grid lg:gap-20 grid-cols-1 pt-10 lg:grid-cols-2 lg:pt-0 items-center">
                 <div>
                     <h2 className="text-6xl font-bold text-black leading-normal">Let's start working together</h2>
                     <h3 className="text-3xl font-bold text-black leading-normal py-4">Say hello <span className="wave">👋</span></h3>

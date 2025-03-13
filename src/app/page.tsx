@@ -210,21 +210,22 @@ export default function Home() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
                 <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
-                  <span className="text-lg pt-5">Working with 25 Media for our brands has been a remarkable experience. The team is professional, and creative and brings quality to our brands through their innovative ideas.</span>
+                  <span className="text-lg">Working with 25 Media for our brands has been a remarkable experience. The team is professional, and creative and brings quality to our brands through their innovative ideas.</span>
                   <span className="mt-7 text-1xl border-t pt-5">Prashant K, <br/>SEO Manager - Valical</span>
                 </div>
                 <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
-                  <span className="text-lg pt-5">Very understanding and many times go out of their way to assist their customers.</span>
+                  <span className="text-lg">Very understanding and many times go out of their way to assist their customers.</span>
                   <span className="mt-7 text-1xl border-t pt-5">Alson David, <br/>UF</span>
                 </div>
                 <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
-                  <span className="text-lg pt-5">Our experience with 25 Media and Team has been really good. We contacted them for Social Media and Websites services and we got results in first 6 months itself.</span>
+                  <span className="text-lg">Our experience with 25 Media and Team has been really good. We contacted them for Social Media and Websites services and we got results in first 6 months itself.</span>
                   <span className="mt-7 text-1xl border-t pt-5">Prashant Kakde, <br/>HB</span>
                 </div>
             </div>
             </div>
     </div>
           </section>
+          <Loader />
     </main>
   );
 }

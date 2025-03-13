@@ -87,11 +87,14 @@ const Nav = () => {
           <Link href="/" className="text-black block hover:bg-white hover: text-black rounded-lg p-2">
             Home
         </Link>
-        <Link href="/" className="text-black block hover:bg-white hover: text-black rounded-lg p-2">
+        <Link href="/services" className="text-black block hover:bg-white hover: text-black rounded-lg p-2">
             Services
         </Link>
-        <Link href="/" className="text-black block hover:bg-white hover: text-black rounded-lg p-2">
+        <Link href="/about" className="text-black block hover:bg-white hover: text-black rounded-lg p-2">
             About Us
+        </Link>
+        <Link href="/contact" className="text-black block hover:bg-white hover: text-black rounded-lg p-2">
+            Contact Us
         </Link>
           </div>
           </div>
