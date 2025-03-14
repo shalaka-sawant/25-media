@@ -1,7 +1,6 @@
 'use client'
 
 import { WordRotate } from "@/components/magicui/word-rotate";
-import { Carousel, CarouselContent,  CarouselItem,  CarouselNext,  CarouselPrevious, } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
 import { MdAccessAlarms, MdArrowOutward, MdLeakAdd } from "react-icons/md";
