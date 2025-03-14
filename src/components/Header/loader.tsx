@@ -35,7 +35,7 @@ export default function Loader(){
       }, []);
 
     return(
-        <div className="loader">
+    <div className="loader">
     <span className="text">
       <h1>Branding and Digital Marketing Agency</h1>
     </span>

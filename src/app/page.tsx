@@ -9,6 +9,7 @@ import Autoplay from "embla-carousel-autoplay"
 import React from "react";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import Loader from "@/components/Header/loader";
+import StarRating from "@/components/StarRating";
 
 export default function Home() {
 
@@ -31,9 +32,9 @@ export default function Home() {
           <BlurFade delay={0.25} inView>
             <div className="relative mx-auto flex max-w-2xl flex-col items-left self-center gap-4 p-2 text-left">
               <div className="heading">
-              <h1 className="text-6xl font-bold text-black leading-normal">We provide Digital Solutions that</h1>
+              <h1 className="leading-normal text-6xl font-bold text-black">We provide Digital Solutions that</h1>
               <WordRotate
-      className="text-4xl font-bold text-black"
+      className="lg:text-3xl text-2xl font-bold text-black"
       words={["Boost Profitability", "Elevate Brand Awareness", "Generate Leads", "Accelerate Business Growth"]}
     /></div>
     <p className="text-lg">Our focus is on delivering accessible, user-friendly experiences that drive growth, engagement, and long-term success.</p>
@@ -209,18 +210,69 @@ export default function Home() {
             </BlurFade>
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
-                <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
-                  <span className="text-lg">Working with 25 Media for our brands has been a remarkable experience. The team is professional, and creative and brings quality to our brands through their innovative ideas.</span>
-                  <span className="mt-7 text-1xl border-t pt-5">Prashant K, <br/>SEO Manager - Valical</span>
-                </div>
-                <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
-                  <span className="text-lg">Very understanding and many times go out of their way to assist their customers.</span>
-                  <span className="mt-7 text-1xl border-t pt-5">Alson David, <br/>UF</span>
-                </div>
-                <div className="grid auto-rows-fr border-2 rounded-3xl gap-20 p-6">
-                  <span className="text-lg">Our experience with 25 Media and Team has been really good. We contacted them for Social Media and Websites services and we got results in first 6 months itself.</span>
-                  <span className="mt-7 text-1xl border-t pt-5">Prashant Kakde, <br/>HB</span>
-                </div>
+                <BlurFade delay={0.50} inView direction="up">
+                <div
+                        className="bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-indigo-600 slide-active:border-indigo-600">
+                        <div
+                            className="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500  group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
+                            <StarRating rating={5} />
+                        </div>
+                        <p className="text-lg leading-8 h-56 transition-all duration-500 mb-9 group-hover:text-gray-800 border-b">
+                        Working with 25 Media for our brands has been a remarkable experience. The team is professional, and creative and brings quality to our brands through their innovative ideas.
+                        </p>
+                        <div className="flex items-center gap-5">
+                            <img className="rounded-full object-cover" src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar" />
+                            <div className="grid gap-1">
+                                <h5
+                                    className="text-gray-900 font-medium transition-all duration-500  group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
+                                    Prashant K, </h5>
+                                <span className="text-sm leading-6 text-gray-500">SEO Manager - Valical </span>
+                            </div>
+                        </div>
+                    </div> 
+                    </BlurFade>
+                    <BlurFade delay={0.75} inView direction="up">
+                    <div
+                        className="bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-indigo-600 slide-active:border-indigo-600">
+                        <div
+                            className="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500  group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
+                            <StarRating rating={5} />
+                        </div>
+                        <p className="text-lg leading-8 h-56 transition-all duration-500 mb-9 group-hover:text-gray-800 border-b">
+                        Very understanding and many times go out of their way to assist their customers.
+                        </p>
+                        <div className="flex items-center gap-5">
+                            <img className="rounded-full object-cover" src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar" />
+                            <div className="grid gap-1">
+                                <h5
+                                    className="text-gray-900 font-medium transition-all duration-500  group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
+                                    Alson David, </h5>
+                                <span className="text-sm leading-6 text-gray-500">UF </span>
+                            </div>
+                        </div>
+                    </div>
+                    </BlurFade>
+                    <BlurFade delay={1} inView direction="up">
+                    <div
+                        className="bg-white border border-solid border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-indigo-600 slide-active:border-indigo-600">
+                        <div
+                            className="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500  group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
+                            <StarRating rating={5} />
+                        </div>
+                        <p className="text-lg leading-8 h-56 transition-all duration-500 mb-9 group-hover:text-gray-800 border-b">
+                        Our experience with 25 Media and Team has been really good. We contacted them for Social Media and Websites services and we got results in first 6 months itself.
+                        </p>
+                        <div className="flex items-center gap-5">
+                            <img className="rounded-full object-cover" src="https://pagedone.io/asset/uploads/1696229969.png" alt="avatar" />
+                            <div className="grid gap-1">
+                                <h5
+                                    className="text-gray-900 font-medium transition-all duration-500  group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
+                                    Prashant Kakde, </h5>
+                                <span className="text-sm leading-6 text-gray-500">HB </span>
+                            </div>
+                        </div>
+                    </div> 
+                </BlurFade>
             </div>
             </div>
     </div>
